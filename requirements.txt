@@ -1,0 +1,15 @@
+# Core tools
+playwright
+requests
+beautifulsoup4
+lxml
+
+# Enhancements
+fake-useragent
+aiohttp
+asyncio-throttle
+
+# Testing
+pytest
+pytest-asyncio
+
