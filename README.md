@@ -21,7 +21,7 @@ A modular Python-based web scraper for extracting product information from e-com
 ## 📁 Project Structure
 
 ```
-coupangassignment/
+coupangtakehomeassignment/
 ├── src/
 │   ├── scrapers/
 │   │   ├── static_scraper.py       # Scraper for static HTML pages
@@ -43,8 +43,8 @@ coupangassignment/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/coupangtakehomeassignment.git
-   cd coupangassignment
+   git clone https://github.com/chichao89/coupangtakehomeassignment.git
+   cd coupangtakehomeassignment
    ```
 
 2. **Install dependencies:** -- for mac
@@ -79,7 +79,7 @@ python run.py --mode dynamic --url "https://example.com" --max-products 30 --out
 |--------|-------------|---------|
 | `--mode` | Scraping mode (static or dynamic) | static |
 | `--url` | Target URL to scrape | Required |
-| `--max-products` | Maximum number of products to scrape | 100 |
+| `--max-products` | Maximum number of products to scrape | 0 | for maximum
 | `--output-format` | Output format (json or csv) | json |
 | `--headless` | Run browser in headless mode (dynamic) | True |
 
@@ -120,6 +120,8 @@ pytest tests/
 - ❌ No support for infinite scroll or API sniffing
 - ❌ Lacks CAPTCHA solving and proxy rotation  
 - ❌ Dynamic scraping may face timeouts on protected sites
+- ❌ Dynamic scraping will not work on current code
+- ❌ Util methods have not been tested 
 
 *These are potential areas for future improvement.*
 
